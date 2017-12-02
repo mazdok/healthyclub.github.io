@@ -53,6 +53,10 @@
 	color: black !important;
 }
 
+.nav-link:hover{
+  color: gray !important;
+}
+
 .social-svg{
 	display: flex;
 	align-items: center;
@@ -63,6 +67,7 @@
 	height: 23px;
 	margin: 0 15px;
 }
+
 /*main image*/
 .main-image{
   background-color: #dbdadb;
@@ -375,5 +380,24 @@
 @media screen and (max-width: 720px) {
   .main-image__img{
     width: 100%;
+  }
+
+  .navbar-svg-first{
+    margin-left: 0;
+  }
+
+}
+
+@media screen and (max-width: 425px) {
+  .navbar-tog{
+    margin: 0 !important;
+  }
+
+  .welcome-img-container{
+    padding-left: 0px !important;
+  }
+
+  .footer-image-wrapper{
+    justify-content: center;
   }
 }

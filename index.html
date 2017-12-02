@@ -10,7 +10,7 @@
 	</head>
 	<body>
 		<nav class="navbar navbar-toggleable-md navbar-light bg-faded">
-			<div class="container">
+			<div class="container navbar-tog">
 			  <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
 			    <span class="navbar-toggler-icon"></span>
 			  </button>
@@ -21,27 +21,27 @@
 					Lviv
 				</span>
 			  <div class="collapse navbar-collapse" id="navbarText">
-			    <div class="navbar-links-wrapper">
+			    <div class="navbar-links-wrapper" id="nav-menu">
 				    <ul class="navbar-nav">
 				      <li class="nav-item active">
-				        <a class="nav-link" href="#">Про нас <span class="sr-only">(current)</span></a>
+				        <a class="nav-link" href="#about_us">Про нас <span class="sr-only">(current)</span></a>
 				      </li>
 				      <li class="nav-item">
-				        <a class="nav-link" href="#">Події</a>
+				        <a class="nav-link" href="#events">Події</a>
 				      </li>
 				      <li class="nav-item">
-				        <a class="nav-link" href="#">Контакти</a>
+				        <a class="nav-link" href="#contacts">Контакти</a>
 				      </li>
 				    </ul>
 				  </div>
 			    <div class="social-svg">
-		    		<a href="">
-		    			<img src="img/facebook.svg" alt="facebook" class="navbar-svg">
+		    		<a href="https://www.facebook.com/HealthyClubLviv/" target="_blank">
+		    			<img src="img/facebook.svg" alt="facebook" class="navbar-svg navbar-svg-first ">
 		    		</a>
-		      	<a href="">
+		      	<a href="mailto:healthyclublviv@gmail.com">
 		      		<img src="img/gmail.svg" alt="gmail" class="navbar-svg">
 		      	</a>
-			      <a href="">
+			      <a href="https://www.instagram.com/healthyclublviv/?hl=uk" target="_blank">
 			      	<img src="img/instagram.svg" alt="instagram" class="navbar-svg">
 			      </a>
 		      </div>
@@ -57,6 +57,7 @@
 			</section>
 			<div class="container main-container">
 				<div class="row">
+					<a id="about_us"></a>
 					<section class="about-us">
 						<h2 class="about-us__heading">Про нас</h2>
 					</section>
@@ -165,7 +166,7 @@
 								<h2 class="heading first-step__heading">
 									Зроби перший крок!
 								</h2>
-								<a href="#">
+								<a href="https://docs.google.com/forms/d/1y7OHUumtfs-fxRqiw6ca27UP4zIpYSy8om_pW5O8qMs/edit?usp=sharing" target="_blank">
 									<button class="btn-green">
 										Стати учасником
 									</button>
@@ -189,6 +190,7 @@
 						</div>
 					</div>
 				</section>
+				<a id="events"></a>
 				<section class="healthy-club-banner">
 					<div class="row event-hand-background">
 						<h1 class="about-us__heading event-hand-heading">Події</h1>
@@ -254,7 +256,7 @@
 									<h2 class="heading first-step__heading">
 										Хочу на подію!
 									</h2>
-									<a href="#">
+									<a href="https://docs.google.com/forms/d/1LCZZIi4bls51uqrAfJneXUDAWjyVtaS5Vbq9fbgT5fk/viewform?usp=sharing&edit_requested=true" target="_blank">
 										<button class="btn-green">
 											Реєстрація
 										</button>
@@ -303,6 +305,7 @@
 				</section>
 			</div>
 			<div class="conntainer-fluid">
+				<a id="contacts"></a>
 				<footer class="main-footer">
 					<div class="container">
 						<div class="row">
@@ -324,14 +327,14 @@
 							</div>
 							<div class="col-md-6 col-sm-12 col-xs-12">
 								<div class="row">
-									<div class="col-md-1">
+									<div class="col-md-1 hidden-xs-down">
 										<div class="footer-border"></div>
 									</div>
-									<div class="col-md-2 footer-social-wrapper">
-										<a href="">
+									<div class="col-md-2 footer-social-wrapper hidden-xs-down">
+										<a href="https://www.facebook.com/HealthyClubLviv/" target="_blank">
 											<img src="img/facebook.svg" alt="facebook" class="footer-social">
 										</a>
-										<a href="">
+										<a href="https://www.instagram.com/healthyclublviv/?hl=uk" target="_blank">
 											<img src="img/instagram.svg" alt="instagram" class="footer-social">
 										</a>
 									</div>
@@ -345,11 +348,10 @@
 				</footer>
 			</div>
 		</main>
-
-
-
 		<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
+		<script src="application.js"></script>
 	</body>
 </html>
