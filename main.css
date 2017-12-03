@@ -194,7 +194,6 @@
 
 .first-step__heading{
   color: #9ec869;
-  margin-bottom: 25px;
 }
 
 .btn-green{
@@ -298,6 +297,17 @@
   width: 50px;
 }
 
+.registrations__desc{
+  font-size: 21px;
+  margin-bottom: 20px;
+}
+
+.registration__arrow{
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+
 .partners-row{
   background-color: #f6f5f4;
   padding: 30px 0;
@@ -399,5 +409,12 @@
 
   .footer-image-wrapper{
     justify-content: center;
+  }
+}
+
+@media screen and (max-width: 320px){
+  /*logo desc "Lviv"*/
+  body > nav > div > span{
+    display: none !important;
   }
 }
