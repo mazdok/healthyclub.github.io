@@ -113,7 +113,7 @@
 }
 
 .welcome__left{
-  padding: 60px 40px 60px 70px !important;
+  padding: 60px 40px 60px 70px;
 }
 
 .welcome__heading{
@@ -568,7 +568,7 @@
 
 }
 
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 576px) {
   .navbar-tog{
     margin: 0 !important;
   }
@@ -579,6 +579,46 @@
 
   .footer-image-wrapper{
     justify-content: center;
+  }
+
+  .welcome__left{
+    padding: 20px 15px;
+  }
+
+  .be-healthy-container{
+    padding: 20px 15px;
+  }
+
+  .gallery-expect{
+    padding: 20px 15px;
+  }
+
+  .first-step{
+    padding: 100px 0;
+  }
+
+  .phrase__container{
+    margin: 0 40px;
+  }
+
+  .slider-arrow{
+    width: 40px;
+  }
+
+  .slider-right-arrow{
+    right: -20px;
+  }
+
+  .creator-wrapper{
+    margin: 0 -15px;
+  }
+
+  .club-events__container{
+    padding: 30px 15px;
+  }
+
+  .about-us__heading{
+    padding-left: 25px;
   }
 }
 
