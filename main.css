@@ -10,6 +10,12 @@
    font-weight: bold;
   }
 
+@font-face {
+  font-family: "MinionProBoldItalic";
+  src: url("fonts/MinionProBoldItalic.ttf") format("ttf"),
+       url("fonts/MinionPro-BoldIt.otf") format("otf");
+}
+
 .container{
   max-width: 970px !important;
 }
@@ -221,6 +227,7 @@
 }
 
 .phrase__container{
+  position: relative;
   margin: 0 85px;
   background: #f6f5f4;
 }
@@ -235,6 +242,23 @@
   color: #34448b;
   text-align: center;
 }
+
+.slider-arrow{
+  position: absolute;
+  top: 50%;
+  cursor: pointer;
+}
+
+.slider-left-arrow{
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+}
+
+.slider-right-arrow{
+  right: -30px;
+  transform: translate(0, -50%);
+}
+
 
 .phrase__heading::after{
   content: "\00bb";
@@ -251,6 +275,83 @@
   color: #cad518;
 }
 
+/*creator section*/
+.creator-wrapper{
+  text-align: center;
+  padding: 50px 0px;
+  margin: 0 70px;
+  color: #f6f6f5;
+  font-family: AvenirNext;
+  background: -moz-linear-gradient(45deg, #95c348 0%, #bbcf11 44%, #bbcf11 44%, #bbcf11 48%, #bbcf11 52%, #bbcf11 52%, #c9d755 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(45deg, #95c348 0%,#bbcf11 44%,#bbcf11 44%,#bbcf11 48%,#bbcf11 52%,#bbcf11 52%,#c9d755 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(45deg, #95c348 0%,#bbcf11 44%,#bbcf11 44%,#bbcf11 48%,#bbcf11 52%,#bbcf11 52%,#c9d755 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#95c348', endColorstr='#c9d755',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+}
+
+.creator-heading{
+  font-size: 36px;
+}
+
+.white-divider{
+  width: 71px;
+  height: 2px;
+  background: #f6f6f5;
+  margin: 25px auto;
+}
+
+.creator-hashtag{
+  font-size: 17px;
+  color: #263783;
+  font-family: sans-serif;
+  margin-bottom: 25px;
+}
+
+.creator-img{
+  margin-bottom: 15px;
+  border: 2px solid #fff;
+  border-radius: 50%;
+}
+
+.creator-desc-wrapper{
+  max-width: 450px;
+  margin: 0 auto 25px;
+}
+
+.creator-desc{
+  position: relative;
+  /*font-family: MinionProBoldItalic;*/
+  font-family: sans-serif;
+  font-style: italic;
+  font-size: 15px;
+  letter-spacing: .4px;
+  margin-bottom: 25px;
+}
+
+.creator-desc::before{
+  content: "\201D";
+  font-family: initial;
+  position: absolute;
+  font-size: 55px;
+  top: -45px;
+  left: -35px;
+}
+
+.creator-desc::after{
+  content: "\201D";
+  font-family: initial;
+  position: absolute;
+  font-size: 55px;
+  bottom: -65px;
+  right: -35px;
+}
+
+.creator-name{
+  font-size: 20px;
+  line-height: 0.57;
+  text-align: center;
+  color: #263783;
+}
+
 .healthy-club-banner{
   margin: 0 -15px;
 }
@@ -262,6 +363,50 @@
   background-position: left center;
 }
 
+.creator-wrapper--two{
+  background: none;
+  color: #97c222;
+}
+
+.green-devider{
+  background: -moz-linear-gradient(45deg, #95c348 0%, #bbcf11 44%, #bbcf11 44%, #bbcf11 48%, #bbcf11 52%, #bbcf11 52%, #c9d755 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(45deg, #95c348 0%,#bbcf11 44%,#bbcf11 44%,#bbcf11 48%,#bbcf11 52%,#bbcf11 52%,#c9d755 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(45deg, #95c348 0%,#bbcf11 44%,#bbcf11 44%,#bbcf11 48%,#bbcf11 52%,#bbcf11 52%,#c9d755 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#95c348', endColorstr='#c9d755',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+}
+
+.creator-img--two{
+  border-color: #97c222;
+  margin-bottom: 30px;
+}
+
+.creator-desc--two{
+  margin-bottom: 25px;
+}
+
+.creator-desc-wrapper--two{
+  max-width: 450px;
+}
+
+/*participants*/
+.participants{
+  font-family: AvenirNext;
+}
+
+.participants-heading{
+  font-size: 36px;
+  color: #97c222;
+  text-align: center;
+  margin: 40px 0;
+}
+
+.participants-wrapper{
+  padding: 0 70px;
+}
+
+.participants-img{
+  width: 100%;
+}
 
 /*club events*/
 .club-events__container{
@@ -385,6 +530,31 @@
   width: 1px;
   height: 55px;
   border-left: 1px solid #b5e00f;
+}
+
+#back-to-top {
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    z-index: 9999;
+    width: 32px;
+    height: 32px;
+    text-align: center;
+    line-height: 30px;
+    background: #f5f5f5;
+    color: #95c35a;
+    cursor: pointer;
+    border: 0;
+    border-radius: 2px;
+    text-decoration: none;
+    transition: opacity 0.2s ease-out;
+    opacity: 0;
+}
+#back-to-top:hover {
+    background: #e9ebec;
+}
+#back-to-top.show {
+    opacity: 1;
 }
 
 @media screen and (max-width: 720px) {
