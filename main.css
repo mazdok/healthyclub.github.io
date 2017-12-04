@@ -622,7 +622,7 @@
   }
 }
 
-@media screen and (max-width: 320px){
+@media screen and (max-width: 425px){
   /*logo desc "Lviv"*/
   body > nav > div > span{
     display: none !important;
