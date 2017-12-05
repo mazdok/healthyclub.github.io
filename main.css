@@ -473,6 +473,12 @@
 .partners-img-wrapper{
   display: flex;
   align-items: center;
+  max-width: 20%;
+  padding: 0 5px;
+}
+
+.partners-img{
+  width: 100%;
 }
 
 /*footer*/
@@ -619,6 +625,18 @@
 
   .about-us__heading{
     padding-left: 25px;
+  }
+
+  .creator-desc{
+    padding: 0 10px;
+  }
+
+  .creator-desc::after{
+    right: 5px;
+  }
+
+  .creator-desc::before{
+    left: 0;
   }
 }
 
