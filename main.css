@@ -310,6 +310,7 @@
   margin-bottom: 15px;
   border: 2px solid #fff;
   border-radius: 50%;
+  max-width: 189px;
 }
 
 .creator-desc-wrapper{
